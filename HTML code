@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <!-- Official Google Classroom Favicon -->
+    <link rel="icon" type="image/png" href="https://ssl.gstatic.com/classroom/ic_product_classroom_32.png">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { width: 100%; height: 100%; background-color: #0b0b1a; overflow: hidden; }
+        iframe { width: 100%; height: 100%; border: none; display: block; }
+    </style>
+</head>
+<body>
+
+    <iframe src="https://gd-webport.pages.dev/" allow="autoplay; fullscreen; encrypted-media; pointer-lock" allowfullscreen></iframe>
+
+    <script>
+        document.title = "Classes";
+
+        window.addEventListener("blur", () => {
+            document.title = "Home - Google Classroom";
+        });
+        window.addEventListener("focus", () => {
+            document.title = "Classes";
+        });
+
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                window.location.href = "https://classroom.google.com";
+            }
+        });
+    </script>
+</body>
+</html>
+
